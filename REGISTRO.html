@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+</head>
+<body style = "background-image: url('images/vegetales.png'); background-repeat: no-repeat; background-size:cover; background-attachment: fixed;">
+    <div style = "width: 700px; margin: auto; padding: 20px; background-color: rgba(245, 245, 245, 0.865); border-radius: 10px; box-shadow: 0px 0px 10px gray; font-family: Arial, sans-serif;">
+        <h2 style = "text-align: center; margin-bottom: 20px; color: darkblue;">Formulario</h2>
+        <form oninput = "litros.value = CantidadDiariaAgua.value"; target="_self">
+            <label for  ="Nombre" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255); ">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" style  = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+
+            <label for="FechaNacimiento" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Fecha de Nacimiento:</label>
+            <input type="date" id="FechaNacimiento" name="FechaNacimiento" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+
+            <label for="CorreoElectronico" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Correo Electrónico:</label>
+            <input type="email" id="CorreoElectronico" name="CorreoElectronico" placeholder="ejemplo@correo.com" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+
+            <label for="NumeroTelefono" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Número de Teléfono:</label>
+            <input type="tel" id="NNumeroTelefono" name="NNumeroTelefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="0000-0000" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+
+            <label for="Genero" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Género:</label>
+            <input type ="radio" id="Masculino" name="GGenero" value="Masculino" style = "margin-right: 5px;" required>
+            <label for="Masculino" style = "margin-right: 15px;">Masculino</label><br>
+            <input type ="radio" id="Femenino" name="GGenero" value="Femenino" style = "margin-right: 5px;" required>
+            <label for="Femenino" style = "margin-right: 15px;">Femenino</label><br>
+            <input type ="radio" id="Otro" name="GGenero" value="Otro" style = "margin-right: 5px;" required>
+            <label for="Otro">Otro</label>
+
+            <label for="Direccion" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Dirección:</label>
+            <textarea id="Direccion" name="Direccion" placeholder="Ej. Calle 4ta, San Francisco" rows="4" style = "width: 95%; height: auto; resize: none; padding: 8px; border: 1px solid gray; border-radius: 5px;" required></textarea>
+
+            <label for="Peso" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Peso (lbs):</label>
+            <input type="number" id="Peso" name="Peso" placeholder="Ej. 135" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+
+            <label for="ActividadFisica" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Nivel de Actividad Física:</label>
+            <select id="ActividadFisica" name="ActividadFisica" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Sedentario">Sedentario</option>
+                <option value="Ligero">Ligero</option>
+                <option value="Moderado">Moderado</option>
+                <option value="Intenso">Intenso</option><br>
+            </select>
+
+            <label for="ObjetivoNutricional" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Objetivo Nutricional:</label>
+            <input type = "checkbox" id="Perder peso" name="ObjetivoNutricional" value="Perder peso" style = "margin-right: 5px;">
+            <label for="Perder peso" style = "margin-right: 15px;">Perder peso</label>
+            <input type = "checkbox" id = "Ganar masa muscular" name="ObjetivoNutricional" value="Ganar masa muscular" style = "margin-right: 5px;">
+            <label for="Ganar masa muscular" style = "margin-right: 15px;">Ganar masa muscular</label>
+            <input type="checkbox" id="MejorarSalud" name="ObjetivoNutricional" value="Mejorar la salud" style="margin-right: 5px;">
+            <label for="MejorarSalud">Mejorar la salud</label><br>
+
+            <label for="AlergiasRestricciones" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Alergias o restricciones alimentarias:</label>
+            <textarea id="AlergiasRestricciones" name="AlergiasRestricciones" placeholder="Ej. Lactosa, granos y cereales, mariscos" rows="4" style = "width: 95%; height: auto; resize: none; padding: 8px; border: 1px solid gray; border-radius: 5px;" required></textarea>
+
+            <label for="CantidadDiariaAgua" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Cantidad diaria de agua consumida (litros):</label>
+            <input type = "range" id="CantidadDiariaAgua" name="CantidadDiariaAgua" min="0" max="10" step="0.1" style = "width: 90%; margin-bottom: 20px;" required>
+            <output name="litros" for="CantidadDiariaAgua">5</output> litros
+
+            <label for "ImagenAlimentos" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Subir imagen de alimentos comunes consumidos:</label>
+            <input type="file" id="ImagenAlimentos" name="ImagenAlimentos" accept="image/*" style = "margin-bottom: 20px;" required><br>
+
+            <label for "HoraComidaPrincipal" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Hora habitual de la comida principal:</label>
+            <input type="time" id="HoraComidaPrincipal" name="HoraComidaPrincipal" style = "width: 30%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required><br>
+            
+            <button type="submit" style = "background-color: darkblue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Enviar</button>
+
+        </form>
+        </div>
+
+
+    
+</body>
+</html>
