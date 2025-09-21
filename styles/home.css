@@ -112,7 +112,7 @@ body {
 .landing__image img {
   width: 70%;
   height: 70%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .landing__container h3 {
@@ -122,7 +122,7 @@ body {
 
 .page_list__wrapper {
   background-color: #afc9f5;
-  padding: 5rem;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 7rem;
+  padding: 2rem 0;
   background-color: #dae8ff;
   position: relative;
 }
