@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG - Salud vital</title>
+  <link rel="icon" type="image/png" href="img/icoB.png">
+  <link rel="stylesheet" href="styles/styleBlog.css">
+</head>
+<body style="background-color: rgb(1, 11, 31); background-image: url('img/Omelette.jpg'); background-repeat: no-repeat; background-size: 95%; background-position: center;" style="background-attachment: fixed; border-radius: 6px;"> 
+  <!-- Encabezado con el título y la navegación -->
+  <header class="header__container">
+    <nav class="header_nav__container">
+      <ul class="header_nav__list">
+        <li class="header_nav__item"><a href="HOME.html">Inicio</a></li>
+        <li class="header_nav__item"><a href="BLOG.html">Blog</a></li>
+        <li class="header_nav__item"><a href="CONTACTANOS.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+      <button class="news__button">
+          <a href="REGISTRO.html">
+            <span>Registrarse</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+          </a>
+      </button>
+        
+      </header>
+    <!-- Contenedor principal de toda la página -->
+    <div class="page">
+        <h1 style="color: #0c721d; text-align: center;">SALUD VITAL</h1>
+          <hr>
+            <!-- Contenido principal -->
+            <main class="content">
+              <!-- Primera fila: imagen + descripción -->
+              <section>
+                <table style="width: 100%;">
+                  <tr>
+                    <td>
+                      <!-- Receta -->
+                      <article class="recipe" aria-labelledby="rec-title">
+                        <!-- Imagen de la receta -->
+                        <figure>
+                          <img src="img/ensaquinoaguacate.jpg" alt="Platillo"; style="display: block; margin: 0 auto;">
+                          <figcaption style="text-align:center; margin-top:8px; color:var(--muted)">Ensalada de quinoa y aguacate</figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                      <!-- Título y descripción de la receta -->
+                      <div class="meta">
+                        <h2 id="rec-title">Ensalada de Quinoa y Aguacate</h2>
+                          <!-- descripción -->
+                          <p>
+                            Una receta ligera y nutritiva, ideal para almuerzos rápidos. <br> Combina quinoa, aguacate,tomate cherry y un aderezo cítrico que realza los sabores. <br>Fácil de preparar y rica en proteínas y grasas saludables.
+                          </p>
+                    </td>
+                  </tr>
+                </table>
+              </section>
+              <hr>
+              <!-- Segunda fila: ingredientes + pasos -->
+              <section>
+                <table style="margin-left:auto; margin-right:auto; width:80%;">
+                  <tr>
+                    <td>
+                      <!-- ingredientes -->
+                      <section class="ingredients" aria-labelledby="ing-title">
+                        <h3 id="ing-title">Ingredientes</h3>
+                          <ul>
+                            <li>1 taza de quinoa cocida</li>
+                            <li>1 aguacate maduro en cubos</li>
+                            <li>10 tomates cherry cortados</li>
+                            <li>1/4 taza de cebolla morada picada</li>
+                            <li>Jugo de 1 limón, sal y pimienta al gusto</li>
+                          </ul>
+                      </section>
+                    </td> 
+                    <td>
+                      <!-- pasos -->
+                      <section class="steps" aria-labelledby="steps-title" style="margin-top:12px;">
+                        <h3 id="steps-title">Pasos de preparación</h3>
+                        <ol>
+                          <li>Cocer la quinoa según instrucciones y dejar enfriar.</li>
+                          <li>Mezclar la quinoa con los tomates, cebolla y aguacate.</li>
+                          <li>Preparar el aderezo con limón, aceite de oliva, sal y pimienta.</li>
+                          <li>Mezclar todo y servir fresco.</li>
+                        </ol>
+                      </section>
+                    </td>
+                  </tr>
+                </table>
+              </section>
+              <hr>
+              <!-- Tercera fila: tabla nutricional -->
+              <div class="nutrition" aria-labelledby="nutri-title" style="text-align:center; margin-top:20px;">
+                <h3 id="nutri-title">Tabla de Información nutricional</h3>
+                  <table class="nutri" role="table" aria-describedby="nutri-title" style="margin:auto; border-collapse:collapse; min-width:500px; background:#fff; border-radius:6px; overflow:hidden;">
+                    <thead>
+                      <tr style="background:#5e69e2; color:#fffefe;">
+                        <th style="padding:10px 15px;">Calorías</th>
+                        <th style="padding:10px 15px;">Proteínas (g)</th>
+                        <th style="padding:10px 15px;">Grasas (g)</th>
+                        <th style="padding:10px 15px;">Carbohidratos (g)</th>
+                        <th style="padding:10px 15px;">Fibra (g)</th>
+                        <th style="padding:10px 15px;">Azúcares (g)</th>
+                      </tr>
+                    </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding:10px 15px; text-align:center;">420</td>
+                          <td style="padding:10px 15px; text-align:center;">12</td>
+                          <td style="padding:10px 15px; text-align:center;">22</td>
+                          <td style="padding:10px 15px; text-align:center;">42</td>
+                          <td style="padding:10px 15px; text-align:center;">8</td>
+                          <td style="padding:10px 15px; text-align:center;">5</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </main>
+              <!-- Pie de página -->
+              <footer>
+                <div class="footer-links">
+                 <a href="HOME.html#ftr">Preguntas frecuentes</a>
+
+                  <a href="privacy.html">Privacidad</a>
+                  <a href="terms.html">Términos</a>
+                  <a href="terms.html">Colaboraciones</a>
+                </div>
+                <div class="lang-select">
+                  <label for="lang">Idioma:</label>
+                  <select id="lang" name="lang" aria-label="Seleccionar idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+              </footer>
+        </div>
+    </body>
+</html>
