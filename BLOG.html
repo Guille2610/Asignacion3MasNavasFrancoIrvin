@@ -7,20 +7,40 @@
   <link rel="icon" type="image/png" href="img/icoB.png">
   <link rel="stylesheet" href="styles/styleBlog.css">
 </head>
-    <body style="background-color: #7d81e7; background-image: url('img/Omelette.jpg'); background-repeat: no-repeat; background-size: 95%; background-position: center;" style="background-attachment: fixed; border-radius: 6px;"> 
-      <!-- Contenedor principal de toda la página -->
-      <div class="page">
-          <!-- Encabezado con el título y la navegación -->
-            <header>
-                <h1 style="color: #0c721d; text-align: center;">SALUD VITAL</h1>
-                <!-- Menú de navegación -->
-                <nav style="text-align: center; background-color: rgba(255, 255, 255, 0.7); padding: 20px; margin: 20px; border-radius: 10px;">
-                    <a style="display: inline; margin: 0 15px" href="HOME.html" style = "font-weight: bold;"><b>Home</b></a>
-                    <a style="display: inline; margin: 0 15px" href="BLOG.html" style = "font-weight: bold;"><b>Blog</b></a>
-                    <a style="display: inline; margin: 0 15px" href="REGISTRO.html" style = "font-weight: bold;"><b>Regístrate</b></a>
-                    <a style="display: inline; margin: 0 15px" href="CONTACTO.html" style = "font-weight: bold;"><b>Contáctanos</b></a>
-                </nav>
-            </header>
+<body style="background-color: rgb(1, 11, 31); background-image: url('img/Omelette.jpg'); background-repeat: no-repeat; background-size: 95%; background-position: center;" style="background-attachment: fixed; border-radius: 6px;"> 
+  <!-- Encabezado con el título y la navegación -->
+  <header class="header__container">
+    <nav class="header_nav__container">
+      <ul class="header_nav__list">
+        <li class="header_nav__item"><a href="HOME.html">Inicio</a></li>
+        <li class="header_nav__item"><a href="BLOG.html">Blog</a></li>
+        <li class="header_nav__item"><a href="CONTACTANOS.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+      <button class="news__button">
+          <a href="REGISTRO.html">
+            <span>Registrarse</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+          </a>
+      </button>
+        
+      </header>
+    <!-- Contenedor principal de toda la página -->
+    <div class="page">
+        <h1 style="color: #0c721d; text-align: center;">SALUD VITAL</h1>
           <hr>
             <!-- Contenido principal -->
             <main class="content">
@@ -113,7 +133,8 @@
               <!-- Pie de página -->
               <footer>
                 <div class="footer-links">
-                  <a href="faq.html">Preguntas frecuentes</a>
+                 <a href="HOME.html#ftr">Preguntas frecuentes</a>
+
                   <a href="privacy.html">Privacidad</a>
                   <a href="terms.html">Términos</a>
                   <a href="terms.html">Colaboraciones</a>
