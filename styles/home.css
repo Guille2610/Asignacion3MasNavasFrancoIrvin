@@ -39,6 +39,12 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo h1 {
+  font-size: 1rem;
+  color: #1b3a57;
+  font-weight: 700;
+}
+
 .header_nav__container {
   width: 100%;
   padding: 0 50px;
