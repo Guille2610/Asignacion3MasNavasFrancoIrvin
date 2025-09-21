@@ -3,74 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Datos</title>
+    <title>Salud Vital</title>
+    <link rel="stylesheet" href="styles/styleReg.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
-<body style = "background-image: url('images/vegetales.png'); background-repeat: no-repeat; background-size:cover; background-attachment: fixed;">
-    <div style = "width: 700px; margin: auto; padding: 20px; background-color: rgba(245, 245, 245, 0.865); border-radius: 10px; box-shadow: 0px 0px 10px gray; font-family: Arial, sans-serif;">
-        <h2 style = "text-align: center; margin-bottom: 20px; color: darkblue;">Formulario</h2>
-        <form oninput = "litros.value = CantidadDiariaAgua.value"; target="_self">
-            <label for  ="Nombre" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255); ">Nombre:</label>
-            <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" style  = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+<body>
 
-            <label for="FechaNacimiento" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Fecha de Nacimiento:</label>
-            <input type="date" id="FechaNacimiento" name="FechaNacimiento" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+    <main class="main__container">
+        
+        <header class="header__container">
+        <nav class="header_nav__container">
+          <ul class="header_nav__list">
+            <li class="header_nav__item"><a href="HOME.html">Inicio</a></li>
+            <li class="header_nav__item"><a href="BLOG.html">Blog</a></li>
+            <li class="header_nav__item"><a href="CONTACTANOS.html">Contactanos</a></li>
+          </ul>
+        </nav>
+        
+        </header>
 
-            <label for="CorreoElectronico" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Correo Electrónico:</label>
-            <input type="email" id="CorreoElectronico" name="CorreoElectronico" placeholder="ejemplo@correo.com" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+        <div class="form-container" style="margin-top:50px;">
+            <h2>Formulario</h2>
+            <form oninput="litros.value = CantidadDiariaAgua.value" target="_self">
+                
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" required>
 
-            <label for="NumeroTelefono" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Número de Teléfono:</label>
-            <input type="tel" id="NNumeroTelefono" name="NNumeroTelefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="0000-0000" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+                <label for="FechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="FechaNacimiento" name="FechaNacimiento" required>
 
-            <label for="Genero" style = "display: block; margin-bottom: 10px; color: rgb(0, 106, 255);">Género:</label>
-            <input type ="radio" id="Masculino" name="GGenero" value="Masculino" style = "margin-right: 5px;" required>
-            <label for="Masculino" style = "margin-right: 15px;">Masculino</label><br>
-            <input type ="radio" id="Femenino" name="GGenero" value="Femenino" style = "margin-right: 5px;" required>
-            <label for="Femenino" style = "margin-right: 15px;">Femenino</label><br>
-            <input type ="radio" id="Otro" name="GGenero" value="Otro" style = "margin-right: 5px;" required>
-            <label for="Otro">Otro</label>
+                <label for="CorreoElectronico">Correo Electrónico:</label>
+                <input type="email" id="CorreoElectronico" name="CorreoElectronico" placeholder="ejemplo@correo.com" required>
 
-            <label for="Direccion" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Dirección:</label>
-            <textarea id="Direccion" name="Direccion" placeholder="Ej. Calle 4ta, San Francisco" rows="4" style = "width: 95%; height: auto; resize: none; padding: 8px; border: 1px solid gray; border-radius: 5px;" required></textarea>
+                <label for="NumeroTelefono">Número de Teléfono:</label>
+                <input type="tel" id="NumeroTelefono" name="NumeroTelefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="0000-0000" required>
 
-            <label for="Peso" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Peso (lbs):</label>
-            <input type="number" id="Peso" name="Peso" placeholder="Ej. 135" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
+                <label>Género:</label>
+                <label for="Masculino " style="color: black; line-height: 0.5;">
+                    <input type="radio" id="Masculino" name="Genero" value="Masculino" required>
+                    Masculino
+                </label>
+                <label for="Femenino " style="color: black ; line-height: 0.5;">
+                    <input type="radio" id="Femenino" name="Genero" value="Femenino" required>
+                    Femenino
+                </label>
+                <label for="Otro" style="color: black; line-height: 0.5;">
+                    <input type="radio" id="Otro" name="Genero" value="Otro" required>
+                    Otro
+                </label>
 
-            <label for="ActividadFisica" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Nivel de Actividad Física:</label>
-            <select id="ActividadFisica" name="ActividadFisica" style = "width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required>
-                <option value="" disabled selected>Seleccione una opción</option>
-                <option value="Sedentario">Sedentario</option>
-                <option value="Ligero">Ligero</option>
-                <option value="Moderado">Moderado</option>
-                <option value="Intenso">Intenso</option><br>
-            </select>
 
-            <label for="ObjetivoNutricional" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Objetivo Nutricional:</label>
-            <input type = "checkbox" id="Perder peso" name="ObjetivoNutricional" value="Perder peso" style = "margin-right: 5px;">
-            <label for="Perder peso" style = "margin-right: 15px;">Perder peso</label>
-            <input type = "checkbox" id = "Ganar masa muscular" name="ObjetivoNutricional" value="Ganar masa muscular" style = "margin-right: 5px;">
-            <label for="Ganar masa muscular" style = "margin-right: 15px;">Ganar masa muscular</label>
-            <input type="checkbox" id="MejorarSalud" name="ObjetivoNutricional" value="Mejorar la salud" style="margin-right: 5px;">
-            <label for="MejorarSalud">Mejorar la salud</label><br>
+                <label for="Direccion">Dirección:</label>
+                <textarea id="Direccion" name="Direccion" placeholder="Ej. Calle 4ta, San Francisco" rows="4" required></textarea>
 
-            <label for="AlergiasRestricciones" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Alergias o restricciones alimentarias:</label>
-            <textarea id="AlergiasRestricciones" name="AlergiasRestricciones" placeholder="Ej. Lactosa, granos y cereales, mariscos" rows="4" style = "width: 95%; height: auto; resize: none; padding: 8px; border: 1px solid gray; border-radius: 5px;" required></textarea>
+                <label for="Peso">Peso (lbs):</label>
+                <input type="number" id="Peso" name="Peso" placeholder="Ej. 135" required>
 
-            <label for="CantidadDiariaAgua" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Cantidad diaria de agua consumida (litros):</label>
-            <input type = "range" id="CantidadDiariaAgua" name="CantidadDiariaAgua" min="0" max="10" step="0.1" style = "width: 90%; margin-bottom: 20px;" required>
-            <output name="litros" for="CantidadDiariaAgua">5</output> litros
+                <label for="ActividadFisica">Nivel de Actividad Física:</label>
+                <select id="ActividadFisica" name="ActividadFisica" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Sedentario">Sedentario</option>
+                    <option value="Ligero">Ligero</option>
+                    <option value="Moderado">Moderado</option>
+                    <option value="Intenso">Intenso</option>
+                </select>
 
-            <label for "ImagenAlimentos" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Subir imagen de alimentos comunes consumidos:</label>
-            <input type="file" id="ImagenAlimentos" name="ImagenAlimentos" accept="image/*" style = "margin-bottom: 20px;" required><br>
+                <label>Objetivo Nutricional:</label>
 
-            <label for "HoraComidaPrincipal" style = "display: block; margin: 20px 0 10px 0; color: rgb(0, 106, 255);">Hora habitual de la comida principal:</label>
-            <input type="time" id="HoraComidaPrincipal" name="HoraComidaPrincipal" style = "width: 30%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;" required><br>
-            
-            <button type="submit" style = "background-color: darkblue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Enviar</button>
+                <label for="PerderPeso" style="color: black; line-height: 0.5;">
+                    <input type="checkbox" id="PerderPeso" name="ObjetivoNutricional" value="Perder peso"> 
+                    Perder peso
+                </label>
+                <label for="GanarMasa" style="color: black; line-height: 0.5;">
+                    <input type="checkbox" id="GanarMasa" name="ObjetivoNutricional" value="Ganar masa muscular">
+                    Ganar masa muscular
+                </label>
+                <label for="MejorarSalud" style="color: black; line-height: 0.5;">
+                    <input type="checkbox" id="MejorarSalud" name="ObjetivoNutricional" value="Mejorar la salud">
+                    Mejorar la salud
+                </label>
 
-        </form>
+                <label for="AlergiasRestricciones">Alergias o restricciones alimentarias:</label>
+                <textarea id="AlergiasRestricciones" name="AlergiasRestricciones" placeholder="Ej. Lactosa, granos y cereales, mariscos" rows="4" required></textarea>
+
+                <label for="CantidadDiariaAgua">Cantidad diaria de agua consumida (litros):</label>
+                <input type="range" id="CantidadDiariaAgua" name="CantidadDiariaAgua" min="0" max="10" step="0.1" required>
+                <output name="litros" for="CantidadDiariaAgua">5</output> litros
+
+                <label for="ImagenAlimentos">Subir imagen de alimentos comunes consumidos:</label>
+                <input type="file" id="ImagenAlimentos" name="ImagenAlimentos" accept="image/*" required>
+                <br><br>
+
+                <label for="HoraComidaPrincipal">Hora habitual de la comida principal:</label>
+                <input type="time" id="HoraComidaPrincipal" name="HoraComidaPrincipal" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-
-
-    
+        
+    </main>
 </body>
 </html>
