@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #e5f0f7dc;
+}
+
+.main__container {
+  display: grid;
+  grid-template-rows: 7vh 93vh 1fr auto;
+}
+
+.header__container {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header_nav__container {
+  width: 100%;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.header_nav__list {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  list-style: none;
+}
+
+.header_nav__list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.landing__container {
+  display: flex;
+  padding: 4.5rem;
+}
+
+.landing__text {
+  width: 80rem;
+  z-index: 10;
+}
+
+.landing__text h1 {
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.landing__text h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.landing__text p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 3rem;
+  line-height: 1.5;
+}
+
+.title_highlight {
+  font-weight: 700;
+}
+
+.landing__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.landing__image img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.landing__container h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.news_section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 7rem;
+  background-color: #afc9f5;
+}
+
+.news__container {
+  display: grid;
+  gap: 3rem;
+  width: 80%;
+  background-color: white;
+  border: 1px solid rgb(169, 174, 207);
+  border-radius: 2rem;
+
+  padding: 0.5rem;
+}
+
+.news__item {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.news__image {
+  width: 20rem;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.news__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+.news_information {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.news_information h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.news_information p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.news_information span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.news__button {
+  all: unset;
+  padding: 0.5rem 0.8rem;
+  background-color: rgb(35, 35, 43);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.news__button a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.news__button svg {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.news__button:hover a {
+  transform: translateX(-5px);
+}
+
+.news__button:hover svg {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.footer__container {
+  display: grid;
+  gap: 1rem;
+  background-color: rgb(1, 11, 31);
+  color: white;
+  padding: 5rem 15rem;
+}
+
+.footer__container h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.footer__questions h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.footer__answer {
+  font-size: 1.2rem;
+}
+
+.custom-shape-divider-bottom-1758422179 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1758422179 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 400px;
+}
+
+.custom-shape-divider-bottom-1758422179 .shape-fill {
+  fill: #afc9f5;
+}
+
+.custom-shape-divider-bottom-1758422374 {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1758422374 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 400px;
+}
+
+.custom-shape-divider-bottom-1758422374 .shape-fill {
+  fill: #dae8ff;
+}
