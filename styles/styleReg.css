@@ -73,3 +73,68 @@ input[type="range"] {
     width: 90%;
     margin-bottom: 20px;
 }
+/* ---- Header (igual que en home) ---- */
+.header__container {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_nav__container {
+  width: 100%;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.header_nav__list {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  list-style: none;
+}
+
+.header_nav__list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.header_nav__list a:hover {
+  color: rgb(77, 75, 75);
+  border-bottom: 2px solid rgb(77, 75, 75);
+}
+
+/* Botón "Registrarse" igual que en home */
+.news__button {
+  all: unset;
+  padding: 0.5rem 0.8rem;
+  width: auto;
+  background-color: rgb(35, 35, 43);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 24px; /* separación del borde derecho */
+}
+
+.news__button a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
