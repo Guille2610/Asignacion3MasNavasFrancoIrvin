@@ -1,5 +1,5 @@
 /* Estilos generales */        
-    .page{ /* Estilos para el contenedor central */
+    .page{ 
         background: linear-gradient(to bottom, rgba(255,255,255,0.92), rgba(255, 255, 255, 0.256));
         border-radius: 12px;
         box-shadow: 0 10px 30px #5e69e2;
@@ -10,6 +10,7 @@
         overflow: hidden;
     }
 
+
     header{
         padding:18px 28px;
         text-align:center;
@@ -19,7 +20,8 @@
 
     header h1{ margin:0; color: var(--accent); font-size:2rem; letter-spacing:1px; }
     nav a:hover{ background: rgba(12,114,29,0.08); color:var(--accent); }
-                
+              
+    
     .recipe img{
         width:60%;
         border-radius:100px;
@@ -36,6 +38,7 @@
       margin: 0 auto;
     }
     
+    /* Estilos para el pie de página */
     footer {
         background: #7d81e7e3;
         margin-top: 18px;
@@ -46,11 +49,15 @@
         gap: 12px;
         flex-wrap: wrap;
     }
+
+    /* Estilos para los enlaces del pie de página */
     .footer-links a {
         margin-right: 12px;
         color: var(--muted);
         text-decoration: none;
     }
+
+    /* Estilos para el selector de idioma */
     .lang-select select {
         padding: 8px 10px;
         border-radius: 6px;

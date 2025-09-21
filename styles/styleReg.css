@@ -1,3 +1,5 @@
+
+/* Fondo de pantalla y estilos generales */
 body {
     background-image: url('../img/vegetales.png');
     background-repeat: no-repeat;
@@ -6,10 +8,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* pequeña división para separar el formulario del borde de la pantalla */
 div{
     margin-top: 2px;
 }
 
+/* Estilos del formulario */
 .form-container {
     width: 700px;
     margin: auto;
@@ -33,6 +37,7 @@ label {
     color: rgb(0, 106, 255);
 }
 
+/* Estilos para los inputs de los campos del formulario */
 input[type="text"],
 input[type="date"],
 input[type="email"],
@@ -48,15 +53,18 @@ textarea {
     border-radius: 5px;
 }
 
+/* Evitar que el usuario pueda redimensionar el área de texto */
 textarea {
     resize: none;
 }
 
+/* Estilos para los botones */
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* Estilos para el botón de envío */
 button {
     background-color: darkblue;
     color: white;
