@@ -8,12 +8,9 @@
   </head>
   <body>
     <main class="main__container">
+      <!-- Encabezado principal con navegación -->
       <header class="header__container">
-        
-        <div class="logo">
-          <h1>Salud Vital</h1>
-        </div>
-
+        <!-- Menú de navegación principal -->
         <nav class="header_nav__container">
           <ul class="header_nav__list">
             <li class="header_nav__item"><a href="HOME.html">Inicio</a></li>
@@ -43,7 +40,9 @@
         
       </header>
 
+      <!-- Sección principal de presentación -->
       <section class="landing__container">
+        <!-- Divisores de forma para el diseño de onda -->
         <div class="custom-shape-divider-bottom-1758422374">
           <svg
             data-name="Layer 1"
@@ -81,14 +80,19 @@
             En Salud Vital ofrecemos información médica confiable, consejos de nutrición, guías de ejercicios y recursos de bienestar para ayudarte a tomar decisiones informadas sobre tu salud. Nuestro equipo de profesionales está comprometido a brindarte contenido claro y accesible para mejorar tu calidad de vida.
         </p>
         </div>
+        
+        <!-- Imagen principal de la landing page -->
         <div class="landing__image">
           <img src="img/landingImage.png" alt="Salud Vital" />
         </div>
       </section>
+      
+      <!-- Sección de categorías de contenido -->
       <section class="page_list__wrapper">
         <div class="page_list__container">
           <h2 class="page_list__title">Nuestras categorías</h2>
             <ul class="page_list__items">
+            <!-- Lista de categorías con iconos -->
             <li class="page_list__item">
               <div class="page_list__item__icon strength">
                 <img src="img/strength.png" alt="Bienestar físico" />
@@ -122,7 +126,10 @@
         </div>
 
       </section>
+      
+      <!-- Sección de noticias recientes -->
       <section class="news_section__wrapper">
+        <!-- Divisores de forma para el diseño de onda -->
         <div class="custom-shape-divider-top-1758430698">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -133,8 +140,11 @@
               <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
           </svg>
         </div>
+        
         <section class="news__container">
           <h2 class="news__title">Últimas Noticias</h2>
+          
+          <!-- Primera noticia -->
           <article class="news__item">
             <div class="news__image">
               <img src="https://www.paho.org/sites/default/files/styles/max_1500x1500/public/2025-09/es-ops-convenio-ops-panama.jpg?itok=71a9GngA" alt="" />
@@ -168,6 +178,8 @@
               </button>
             </div>
           </article>
+          
+          <!-- Segunda noticia -->
           <article class="news__item">
             <div class="news__image">
               <img src="https://www.panamaamerica.com.pa/sites/default/files/imagenes/2025/08/25/salud-bucal_0.jpg" alt="" />
@@ -203,6 +215,8 @@
               </button>
             </div>
           </article>
+          
+          <!-- Tercera noticia -->
           <article class="news__item">
             <div class="news__image">
               <img src="https://www.panamaamerica.com.pa/sites/default/files/imagenes/2025/06/10/ayuno-intermitente_0.jpg" alt="" />
@@ -243,6 +257,7 @@
         </section>
       </section>
 
+    <!-- Pie de página con preguntas frecuentes -->
     <footer class="footer__container">
       <h3>Preguntas frecuentes</h3>
       <div class="footer__questions">
@@ -265,10 +280,26 @@
       </div>
       <div class="footer__questions">
         <h4>¿Ofrecen planes de nutrición personalizados?</h4>
-        <section class="footer__answer"></section>
+        <section class="footer__answer">
         <p>Sí, contamos con especialistas en nutrición que pueden diseñar un plan alimenticio adaptado a sus necesidades específicas y objetivos de salud.</p>
         </section>
+
       </div>
+      <div class="links">  
+        <!-- Políticas de privacidad ejemplo -->
+        <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Política de Privacidad</a>
+        
+        <!-- Términos y condiciones ejemplo -->
+        <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank">Términos y Condiciones</a>
+    </div>
+
+    <div class="idioma">
+        <label for="language">Idioma:</label>
+        <select id="language">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+    </div>
     </footer>
     </main>
   </body>

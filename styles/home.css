@@ -332,6 +332,13 @@ body {
   font-size: 1.2rem;
 }
 
+.footer__container a {
+  color: white;
+  font-weight: 600;
+}
+
+/*------------------ Divisores de forma para el diseño de onda ------------------*/
+
 .custom-shape-divider-bottom-1758422179 {
   position: absolute;
   bottom: 0;
